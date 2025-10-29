@@ -3,6 +3,10 @@ name: Deploy to App Engine
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'backend/**'
+      - 'frontend/**'
+      - '.github/workflows/deploy.yaml'
 
 jobs:
   build-and-deploy:
@@ -11,7 +15,7 @@ jobs:
       contents: read
       id-token: write
     env:
-      PROJECT_ID: samhumpheys-website
+      PROJECT_ID: samhumphreys-website
       APP_DIR: backend
     steps:
       - name: Checkout
