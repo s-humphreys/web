@@ -1,1 +1,17 @@
+# Terraform
 .terraform/
+
+# Node.js
+frontend/node_modules
+frontend/dist
+
+# Go
+backend/bin
+backend/*.log
+backend/server
+backend/server-linux
+backend/web/dist/*
+!backend/web/dist/index.html
+
+# macOS
+.DS_Store

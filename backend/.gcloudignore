@@ -1,0 +1,35 @@
+# Core
+.gcloudignore
+.git/
+.gitignore
+.github/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Env and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.json.enc
+
+# Logs and coverage
+*.log
+coverage/
+*.coverprofile
+coverage.out
+
+# Build artifacts/binaries
+server
+server-linux
+*.exe
+*.out
+*.test
+
+# Tests and temp
+tests/
+tmp/
